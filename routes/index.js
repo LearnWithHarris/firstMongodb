@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/authors', AuthorController.findAuthor)
 router.post('/authors', AuthorController.createAuthor)
+router.put('/authors/:idAuthor', AuthorController.findAndUpdate)
 router.delete('/authors/:idAuthor', AuthorController.deleteAuthor)
 
 module.exports = router;
